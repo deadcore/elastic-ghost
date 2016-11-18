@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+- 4.0.0
+notifications:
+  email: false
+addons:
+  code_climate:
+    repo_token: f5c649e2bc99b0a32cadebf588b3b078ecc05a55f58ae37b342b6777b0117f0a
+after_script:
+- npm install -g codeclimate-test-reporter
+- cat lcov.info | codeclimate-test-reporter
+env:
+- ELASTIC_BEANSTALK_LABEL=$TRAVIS_COMMIT
+deploy:
+    provider: elasticbeanstalk
+    region: eu-west-1
+    app: passplum
+    env: passplum-prod
+    bucket-name: $ELASTIC_BEANSTALK_BUCKET
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    on:
+        repo: maxbeatty/passplum
+        branch: master
