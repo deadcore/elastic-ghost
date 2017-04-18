@@ -1,0 +1,17 @@
+{
+  "name": "elastic-ghost",
+  "version": "0.0.1",
+  "description": "A wrapper for wrapping up Ghost blogging platform in elasticbeanstalk",
+  "main": "index.js",
+  "scripts": {
+    "init": "yarn global add knex-migrator ember-cli grunt-cli && yarn install && grunt init || true",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ghost": "1.0.0-alpha.19",
+    "ghost-s3-service": "^1.0.2",
+    "knex-migrator": "^2.0.16"
+  }
+}
