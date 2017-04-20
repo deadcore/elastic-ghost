@@ -1,3 +1,1 @@
-var config = require('./node_modules/ghost/MigratorConfig');
-
-module.exports = config;
+module.exports = require('./node_modules/ghost/MigratorConfig');
