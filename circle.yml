@@ -7,4 +7,4 @@ deployment:
     branch: master
     commands:
       - zip -r elastic-ghost.zip ./*
-      - eb deploy --profile default
+      - eb deploy -l $CIRCLE_BUILD_NUM
