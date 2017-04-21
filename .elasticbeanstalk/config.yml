@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: production
+global:
+  application_name: elastic-ghost
+  default_region: eu-west-1
+  profile: eb-cli
+  sc: git
+deploy:
+  artifact: elastic-ghost.zip
