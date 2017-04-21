@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "ghost": "1.0.0-alpha.19",
-    "ghost-s3-service": "^1.0.2",
     "knex-migrator": "^2.0.16"
   }
 }
