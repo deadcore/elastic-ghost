@@ -4,7 +4,6 @@ branch-defaults:
 global:
   application_name: Ghost
   default_region: eu-west-1
-  profile: eb-cli
   sc: git
 deploy:
   artifact: $CIRCLE_ARTIFACTS/elastic-ghost.zip
