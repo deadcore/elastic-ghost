@@ -6,4 +6,4 @@ global:
   default_region: eu-west-1
   sc: git
 deploy:
-  artifact: $CIRCLE_ARTIFACTS/elastic-ghost.zip
+  artifact: ./elastic-ghost.zip
