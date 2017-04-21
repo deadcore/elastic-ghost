@@ -6,4 +6,5 @@ deployment:
   production:
     branch: master
     commands:
+      - zip -r elastic-ghost.zip ./*
       - eb deploy --profile default
