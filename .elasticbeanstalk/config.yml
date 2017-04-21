@@ -2,7 +2,7 @@ branch-defaults:
   master:
     environment: production
 global:
-  application_name: elastic-ghost
+  application_name: Ghost
   default_region: eu-west-1
   profile: eb-cli
   sc: git
